@@ -1,4 +1,4 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+This is simple TODO app build with [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
@@ -13,12 +13,9 @@ To start the Metro dev server, run the following command from the root of your R
 ```sh
 # Using npm
 npm start
-
-# OR using Yarn
-yarn start
 ```
 
-## Step 2: Build and run your app
+## Step 2: Build and run app
 
 With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
 
@@ -34,9 +31,9 @@ yarn android
 
 ### iOS
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+For iOS, need to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+The first time un the Ruby bundler to install CocoaPods itself:
 
 ```sh
 bundle install
@@ -58,40 +55,37 @@ npm run ios
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+If everything is set up correctly, you should see app running in the Android Emulator, iOS Simulator, or your connected device.
 
 This is one way to run your app — you can also build it directly from Android Studio or Xcode.
 
-## Step 3: Modify your app
 
-Now that you have successfully run the app, let's make changes!
+# Techical information
+## 1. Description of the Code and Technologies Used
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+This project is a mobile ToDo application designed to help users manage their tasks efficiently. Users can add, view, update the status of (e.g., in progress, completed, canceled), and delete tasks. Tasks can also be sorted by creation date or status.
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+The application is built using the following core technologies:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+*   **React Native:** A JavaScript framework for building native mobile applications for iOS and Android from a single codebase.
+*   **TypeScript:** A superset of JavaScript that adds static typing, improving code quality and maintainability.
+*   **React Hooks:** Used for state management and side effects within functional components (e.g., `useState`, `useEffect`, `useCallback`, `useMemo`).
+*   **AsyncStorage:** For persisting task data locally on the user's device.
+*   **React Native Swipe List View:** To implement swipeable list items for quick actions like marking tasks as complete or deleting them.
+*   **React Native Vector Icons (MaterialIcons):** For iconography throughout the application.
+*   **React Native Date Picker:** To provide a native date and time selection interface.
+*   **Core React Native Components:** For building the user interface (View, Text, TouchableOpacity, Modal, FlatList, etc.).
 
-## Congratulations! :tada:
+## 2. Explanation of Technology Stack and Reasoning Behind Choices
 
-You've successfully run and modified your React Native App. :partying_face:
+*   **React Native:** Chosen for its ability to develop cross-platform (iOS and Android) applications from a single JavaScript/TypeScript codebase, significantly reducing development time and effort compared to writing separate native apps. Its large community and rich ecosystem of libraries are also major advantages.
+*   **AsyncStorage:** A simple and effective solution for client-side storage in React Native, suitable for storing user-generated content like ToDo tasks without requiring a backend server for this particular application's scope.
+*   **React Native Swipe List View, Vector Icons, Date Picker:** These libraries were chosen to provide a good user experience with common mobile patterns (swipe actions, clear iconography, native date selection) without needing to build these complex components from scratch.
 
-### Now what?
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
 
 # Troubleshooting
 
 If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
 
-# Learn More
 
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
